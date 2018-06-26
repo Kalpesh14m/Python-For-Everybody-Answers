@@ -1,0 +1,40 @@
+1.Which of the following is a comment in Python?
+==> # This is a test
+
+2.What does the following code print out?
+print("123" + "abc")
+==> 123abc
+
+3.Which of the following variables is the "most mnemonic"?
+==> x
+
+4.Which of the following is not a Python reserved word?
+==> spam
+
+5.Assume the variable x has been initialized to an integer value (e.g., x = 3). What does the following statement do?
+x = x + 2
+==> Retrieve the current value for x, add two to it, and put the sum back into x
+
+6.Which of the following elements of a mathematical expression in Python is evaluated first?
+==> Parentheses ( )
+
+7.What is the value of the following expression
+42 % 10
+==> 2
+
+8.What will be the value of x after the following statement executes:
+x = 1 + 2 * 3 - 8 / 4
+==> 5.0
+
+9.What will be the value of x when the following statement is executed:
+x = int(98.6)
+==> 98
+
+10.What does the Python input() function do?
+==> Pause the program and read data from the user
+
+11.In the following code, print(98.6) What is “98.6”?
+==> A constant
+
+12.Which of the following is a bad Python variable name?
+==> spam.23

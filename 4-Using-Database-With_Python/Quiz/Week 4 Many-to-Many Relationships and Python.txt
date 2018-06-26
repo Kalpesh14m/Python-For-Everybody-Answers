@@ -1,0 +1,39 @@
+1.How do we model a many-to-many relationship between two database tables?
+==>We add a table with two foreign keys
+
+2.In Python, what is a database "cursor" most like?
+==>A file handle
+
+3.What method do you call in an SQLIte cursor object in Python to run an SQL command?
+==>execute()
+
+4.In the following SQL,
+cur.execute('SELECT count FROM Counts WHERE org = ? ', (org, ))
+what is the purpose of the "?"?
+==>It is a placeholder for the contents of the "org" variable
+
+5.In the following Python code sequence (assuming cur is a SQLite cursor object),
+cur.execute('SELECT count FROM Counts WHERE org = ? ', (org, ))
+row = cur.fetchone()
+what is the value in row if no rows match the WHERE clause?
+==>None
+
+6.What does the LIMIT clause in the following SQL accomplish?
+SELECT org, count FROM Counts 
+   ORDER BY count DESC LIMIT 10
+==>It only retrieves the first 10 rows from the table
+
+7.What does the executescript() method in the Python SQLite cursor object do that the normal execute() method does not do?
+==>It allows multiple SQL statements separated by semicolons
+
+8.What is the purpose of "OR IGNORE" in the following SQL:
+INSERT OR IGNORE INTO Course (title) VALUES ( ? )
+==>It makes sure that if a particular title is already in the table, there are no duplicate rows inserted
+
+9.For the following Python code to work, what must be added to the title column in the CREATE TABLE statement for the Course table:
+cur.execute('''INSERT OR IGNORE INTO Course (title)
+    VALUES ( ? )''', ( title, ) )
+cur.execute('SELECT id FROM Course WHERE title = ? ', 
+    (title, ))
+course_id = cur.fetchone()[0]
+==>A UNIQUE constraint
