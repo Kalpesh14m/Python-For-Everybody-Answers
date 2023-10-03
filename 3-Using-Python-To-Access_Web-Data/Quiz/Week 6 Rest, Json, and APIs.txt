@@ -39,3 +39,18 @@ What header does Twitter use to tell you how many more API requests you can make
 
 12.Which of the following is a web services approach used by the Twitter API?
 ==>REST
+
+13.If the following JSON were parsed and put into the variable x,
+{
+  "users": [
+    {
+        "status":
+          {
+            "text": "@jazzychad I just bought one.__.",
+          },
+          "location"  :"5an Francisco, California",
+          "screen_name""leahculver".
+          "name": "Leah Culver",
+    }
+...
+==>x["users"][0]["name"]
